@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "GitHub Portfolio Page",
   "main": "index.html",
-  "dependencies": {
-    "react": "^16.8.3",
-    "tachyons": "^4.11.1"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
