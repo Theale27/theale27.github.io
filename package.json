@@ -1,0 +1,24 @@
+{
+  "name": "theale27.github",
+  "version": "1.0.0",
+  "description": "GitHub Portfolio Page",
+  "main": "index.html",
+  "dependencies": {
+    "react": "^16.8.3",
+    "tachyons": "^4.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Theale27/theale27.github.io.git"
+  },
+  "author": "Theale Hastelow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Theale27/theale27.github.io/issues"
+  },
+  "homepage": "https://github.com/Theale27/theale27.github.io#readme"
+}
