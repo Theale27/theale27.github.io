@@ -4,7 +4,7 @@
 
 .secondary { color: #6363bc; }
 
-body, html { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; font-size: 1.1rem; margin: 0; font-family: "Open Sans", sans-serif; }
+body, html { height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; font-size: 1.1rem; margin: 0; font-family: "Open Sans", sans-serif; font-display: swap; }
 
 body nav, body footer, body h1, body h2, body h3, html nav, html footer, html h1, html h2, html h3 { font-family: "Montserrat", sans-serif; }
 
