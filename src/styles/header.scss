@@ -1,0 +1,26 @@
+@import "./_mixins.scss";
+
+nav {
+  background-color: $primary;
+  padding: $list-height $page-horizontal-padding;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    li {
+      &.home {
+        margin-right: auto;
+      }
+      .active {
+        color: darken($white, 40%);
+      }
+      a {
+        color: $white;
+        &:hover {
+          color: darken($white, 40%);
+          transition-duration: 0.25s;
+        }
+      }
+    }
+  }
+}

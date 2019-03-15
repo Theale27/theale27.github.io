@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,700");
+
+/* Colors */
+$white: white;
+$black: black;
+$primary: #191970; //MidnightBlue
+$secondary: #6363bc;
+
+.primary {
+  color: $primary;
+}
+.secondary {
+  color: $secondary;
+}
+
+/* Other */
+$page-horizontal-padding: 1.5rem;
+/* Ordered/Unordered Lists */
+$list-height: 1rem;
+$list-spacing: 0.7rem;

@@ -1,0 +1,33 @@
+@import "./_mixins.scss";
+
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  div {
+    margin: 1rem 0.5rem;
+    padding: 1rem 1.5rem;
+    border: 1px solid $primary;
+    border-radius: 0.25rem;
+    width: 11rem;
+    hr {
+      border: 1px solid $primary;
+    }
+    h3 {
+      text-align: center;
+    }
+    ul {
+      padding-top: 0.25rem;
+      li {
+        list-style-type: none;
+        text-align: left;
+        font-size: 0.85rem;
+        padding: 0.25rem 0;
+        a {
+          text-decoration: none;
+          padding: $list-height $list-spacing;
+        }
+      }
+    }
+  }
+}
