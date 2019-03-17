@@ -3,41 +3,24 @@ import "../styles/header.scss";
 
 class Header extends Component {
   render() {
+    let linksMarkup = this.props.links.map((link, i) => {
+      // Set the link to active for its page
+      if (window.location.pathname === "/" + link.link) {
+        link.active = true;
+      } else if (window.location.pathname === "/") {
+        this.props.links[0].active = true;
+      }
+      return (
+        <li key={i}>
+          <a active={link.active.toString()} href={link.link}>
+            {link.label}
+          </a>
+        </li>
+      );
+    });
     return (
       <nav>
-        <ul className="horizontal-list">
-          <li className="home">
-            <a
-              className={window.location.pathname === "/" ? "active" : ""}
-              href="./"
-              title="Home"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              className={
-                window.location.pathname === "/myskills.html" ? "active" : ""
-              }
-              href="myskills.html"
-              title="My Skills"
-            >
-              My Skills
-            </a>
-          </li>
-          <li>
-            <a
-              className={
-                window.location.pathname === "/projects.html" ? "active" : ""
-              }
-              href="projects.html"
-              title="Projects"
-            >
-              Projects
-            </a>
-          </li>
-        </ul>
+        <ul className="horizontal-list">{linksMarkup}</ul>
       </nav>
     );
   }

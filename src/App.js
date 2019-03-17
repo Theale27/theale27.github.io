@@ -7,18 +7,43 @@ import Projects from "./components/projects";
 
 class App extends Component {
   render() {
-    let mainComponent = null;
-    if (window.location.pathname === "/") {
-      mainComponent = <AboutMe />;
-    } else if (window.location.pathname === "/myskills.html") {
-      mainComponent = <Skills />;
-    } else if (window.location.pathname === "/projects.html") {
-      mainComponent = <Projects />;
+    let links = [
+      {
+        component: <AboutMe />,
+        label: "About Me",
+        link: "about-me",
+        active: false
+      },
+      {
+        component: <Skills />,
+        label: "Skills",
+        link: "skills",
+        active: false
+      },
+      {
+        component: <Projects />,
+        label: "Projects",
+        link: "projects",
+        active: false
+      }
+    ];
+
+    function loadMainSection() {
+      let i = null;
+      links.forEach((element, index) => {
+        if (window.location.pathname === "/" + element.link) {
+          i = index;
+        } else if (window.location.pathname === "/") {
+          i = 0;
+        }
+      });
+      return links[i].component;
     }
+
     return (
       <div className="App">
-        <Header />
-        {mainComponent}
+        <Header links={links} />
+        {loadMainSection()}
         <Footer />
       </div>
     );

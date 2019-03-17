@@ -5,13 +5,13 @@ class Skills extends Component {
   render() {
     return (
       <main>
-        <section class="titles">
+        <section className="titles">
           <h2>
-            <span class="primary">My Skills</span>
+            <span className="primary">My Skills</span>
           </h2>
         </section>
         <section id="skills">
-          <div class="front-end">
+          <div className="front-end">
             <h3>Front-end</h3>
             <hr />
             <ul>
@@ -22,7 +22,7 @@ class Skills extends Component {
               <li>Bootstrap 4</li>
             </ul>
           </div>
-          <div class="back-end">
+          <div className="back-end">
             <h3>Back-end</h3>
             <hr />
             <ul>
@@ -30,7 +30,7 @@ class Skills extends Component {
               <li>Node.js</li>
             </ul>
           </div>
-          <div class="other">
+          <div className="other">
             <h3>Other</h3>
             <hr />
             <ul>

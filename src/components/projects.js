@@ -10,11 +10,14 @@ class Projects extends Component {
     return (
       <main>
         <section id="projects-container">
-          <div class="project">
+          <div className="project">
             <img src={img_faceRecognition} alt="Face Recognition App" />
-            <div class="p-info">
+            <div className="p-info">
               <h3>Face Recognition App</h3>
-              <p class="p-description" data-hover="Javascript, HTML, CSS, API">
+              <p
+                className="p-description"
+                data-hover="Javascript, HTML, CSS, API"
+              >
                 Built during the{" "}
                 <a
                   href="https://www.udemy.com/the-complete-web-developer-zero-to-mastery/"
@@ -30,19 +33,19 @@ class Projects extends Component {
                 <br />
                 <br />
               </p>
-              <div class="btns">
+              <div className="btns">
                 <a
                   href="https://smart-brain-27.herokuapp.com/"
-                  class="live-btn"
+                  className="live-btn"
                 >
                   Live
                 </a>
               </div>
             </div>
           </div>
-          <div class="project">
+          <div className="project">
             <img src={img_robofriends} alt="Project" />
-            <div class="p-info">
+            <div className="p-info">
               <h3>RoboFriends</h3>
               <p>
                 React Progressive Web App created during the Udemy{" "}
@@ -61,25 +64,25 @@ class Projects extends Component {
                 </a>{" "}
                 that filters the list of robots.
               </p>
-              <div class="btns">
+              <div className="btns">
                 <a
                   href="https://theale27.github.io/robofriends/"
-                  class="live-btn"
+                  className="live-btn"
                 >
                   Live
                 </a>
                 <a
                   href="https://github.com/theale27/robofriends"
-                  class="github-btn"
+                  className="github-btn"
                 >
                   GitHub
                 </a>
               </div>
             </div>
           </div>
-          <div class="project">
+          <div className="project">
             <img src={img_cmoq} alt="Project" />
-            <div class="p-info">
+            <div className="p-info">
               <h3>Chinese Museum of Queensland (CMoQ)</h3>
               <p>
                 This website was an industry project with the University of the
@@ -88,16 +91,16 @@ class Projects extends Component {
                 Maps API.
                 <br />I received an high distinction with 92%.
               </p>
-              <div class="btns">
-                <a href="http://cmoq.com.au/" class="live-btn">
+              <div className="btns">
+                <a href="http://cmoq.com.au/" className="live-btn">
                   Live
                 </a>
               </div>
             </div>
           </div>
-          <div class="project">
+          <div className="project">
             <img src={img_pokemonPairs} alt="Pokemon Pairs" />
-            <div class="p-info">
+            <div className="p-info">
               <h3>Pokemon Pairs</h3>
               <p>
                 This game was made for{" "}
@@ -109,16 +112,16 @@ class Projects extends Component {
                 matching game with vanilla javascript that met the list of
                 requirements.
               </p>
-              <div class="btns">
+              <div className="btns">
                 <a
                   href="https://theale27.github.io/pokemon-pairs/"
-                  class="live-btn"
+                  className="live-btn"
                 >
                   Live
                 </a>
                 <a
                   href="https://github.com/theale27/pokemon-pairs"
-                  class="github-btn"
+                  className="github-btn"
                 >
                   GitHub
                 </a>

@@ -8,14 +8,15 @@ nav {
     flex-direction: row;
     justify-content: flex-end;
     li {
-      &.home {
+      &:first-child {
         margin-right: auto;
       }
-      .active {
+      [active="true"] {
         color: darken($white, 40%);
       }
       a {
         color: $white;
+
         &:hover {
           color: darken($white, 40%);
           transition-duration: 0.25s;
