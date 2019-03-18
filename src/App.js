@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import Header from "./components/header";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Navigation from "./components/navigation";
 import Footer from "./components/footer";
 import AboutMe from "./components/about-me";
 import Skills from "./components/skills.js";
@@ -7,45 +8,34 @@ import Projects from "./components/projects";
 
 class App extends Component {
   render() {
-    let links = [
+    let navLinks = [
       {
-        component: <AboutMe />,
         label: "About Me",
-        link: "about-me",
-        active: false
+        link: "/"
       },
       {
-        component: <Skills />,
         label: "Skills",
-        link: "skills",
-        active: false
+        link: "/skills"
       },
       {
-        component: <Projects />,
         label: "Projects",
-        link: "projects",
-        active: false
+        link: "/projects"
       }
     ];
 
-    function loadMainSection() {
-      let i = null;
-      links.forEach((element, index) => {
-        if (window.location.pathname === "/" + element.link) {
-          i = index;
-        } else if (window.location.pathname === "/") {
-          i = 0;
-        }
-      });
-      return links[i].component;
-    }
-
     return (
-      <div className="App">
-        <Header links={links} />
-        {loadMainSection()}
-        <Footer />
-      </div>
+      <Router>
+        <div className="App">
+          <Navigation navLinks={navLinks} />
+          <Switch>
+            <Route path={navLinks[1].link} component={Skills} />
+            <Route path={navLinks[2].link} component={Projects} />
+            {/* Switch finds the first match which is why home ('/') is last */}
+            <Route path={navLinks[0].link} component={AboutMe} />
+          </Switch>
+          <Footer />
+        </div>
+      </Router>
     );
   }
 }

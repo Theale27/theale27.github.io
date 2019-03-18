@@ -11,15 +11,14 @@ nav {
       &:first-child {
         margin-right: auto;
       }
-      [active="true"] {
-        color: darken($white, 40%);
-      }
       a {
         color: $white;
-
         &:hover {
           color: darken($white, 40%);
           transition-duration: 0.25s;
+        }
+        &.active {
+          color: darken($white, 40%);
         }
       }
     }
