@@ -17,9 +17,9 @@ class Skills extends Component {
             <ul>
               <li>HTML5 | CSS3</li>
               <li>LESS | SASS</li>
+              <li>Bootstrap 4</li>
               <li>JavaScript</li>
               <li>jQuery</li>
-              <li>Bootstrap 4</li>
               <li>React</li>
             </ul>
           </div>
