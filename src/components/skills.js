@@ -17,9 +17,8 @@ class Skills extends Component {
             <ul>
               <li>HTML5 | CSS3</li>
               <li>LESS | SASS</li>
+              <li>JavaScript (jQuery)</li>
               <li>Bootstrap 4</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
               <li>React</li>
             </ul>
           </div>
@@ -27,7 +26,7 @@ class Skills extends Component {
             <h3>Back-end</h3>
             <hr />
             <ul>
-              <li>PL/SQL | T-SQL</li>
+              <li>SQL</li>
               <li>Node.js</li>
             </ul>
           </div>
@@ -35,10 +34,10 @@ class Skills extends Component {
             <h3>Other</h3>
             <hr />
             <ul>
-              <li>Git</li>
+              <li>Git, GitHub + Bitbucket, JIRA</li>
               <li>Responsive Design</li>
-              <li>Photoshop</li>
-              <li>Illustrator</li>
+              <li>Photoshop, Illustrator</li>
+              <li>Excel, Word</li>
             </ul>
           </div>
         </section>
