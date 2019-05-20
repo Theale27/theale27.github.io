@@ -86,10 +86,10 @@ class Projects extends Component {
               <h3>Chinese Museum of Queensland (CMoQ)</h3>
               <p>
                 This website was an industry project with the University of the
-                Sunshine and was designed and developed as part of a 3 person
-                team using HTML, CSS, JavaScript, Bootstrap 3, and the Google
-                Maps API.
-                <br />I received an high distinction with 92%.
+                Sunshine Coast and was designed and developed as part of a 3
+                person team using HTML, CSS, JavaScript, Bootstrap 3, and the
+                Google Maps API.
+                <br />I received a high distinction with 92%.
               </p>
               <div className="btns">
                 <a href="http://cmoq.com.au/" className="live-btn">
@@ -121,6 +121,52 @@ class Projects extends Component {
                 </a>
                 <a
                   href="https://github.com/theale27/pokemon-pairs"
+                  className="github-btn"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="project">
+            <div className="p-info">
+              <h3>Websites made during University</h3>
+              <hr />
+              <p>
+                Novacare Website - This website was made for a University
+                assignment in 2014 and uses HTML, CSS, JavaScript/jQuery, and
+                the image plugin lightbox.
+              </p>
+              <div className="btns">
+                <a
+                  href="https://theale27.github.io/Novacare-Website/index.html"
+                  className="live-btn"
+                >
+                  Live
+                </a>
+                <a
+                  href="https://github.com/theale27/Novacare-Website"
+                  className="github-btn"
+                >
+                  GitHub
+                </a>
+              </div>
+              <br />
+              <p>
+                Band Website - This website was made for a University assignment
+                in 2016 which was to advertise a band's tour by providing a
+                responsive webpage with an Australia theme. It uses HTML, CSS,
+                JavaScript/jQuery, and PHP.
+              </p>
+              <div className="btns">
+                <a
+                  href="https://band-website-2016.herokuapp.com"
+                  className="live-btn"
+                >
+                  Live
+                </a>
+                <a
+                  href="https://github.com/theale27/Band-Website"
                   className="github-btn"
                 >
                   GitHub
